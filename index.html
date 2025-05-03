@@ -13,12 +13,75 @@
       </div>
     </header>
     <main class="content">
-      <p>
-        This is not a real online service! You know you need something like this
-        in your life to help you realize your deepest dreams. Sign up now to get
-        started. <br />
-        You know you want to.
-      </p>
+      <div class="info">
+        <p class="bold">
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up
+          <span class="italic">now</span>
+          to get started.
+        </p>
+        <br />
+        <p class="bold">
+          You
+          <span class="italic">know</span>
+          you want to.
+        </p>
+      </div>
+      <div class="form-div">
+        <form>
+          <fieldset>
+            <p class="bold">Let's do this!</p>
+            <div class="form-row">
+              <div class="form-input">
+                <label for="fname">FIRST NAME</label>
+                <input type="text" id="fname" name="fname" required />
+              </div>
+              <div class="form-input">
+                <label for="lname">LAST NAME</label>
+                <input type="text" id="lname" name="lname" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-input">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-input">
+                <label for="number">PHONE NUMBER</label>
+                <input type="tel" id="number" name="number" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-input">
+                <label for="pwd">PASSWORD</label>
+                <input
+                  type="password"
+                  id="pwd"
+                  name="password"
+                  required
+                  minlength="6"
+                  maxlength="12"
+                />
+              </div>
+              <div class="form-input">
+                <label for="confirm-pwd">CONFIRM PASSWORD</label>
+                <input
+                  type="text"
+                  id="confirm-pwd"
+                  name="confirm-password"
+                  required
+                  minlength="6"
+                  maxlength="12"
+                />
+              </div>
+            </div>
+          </fieldset>
+          <button>Create Account</button>
+        </form>
+      </div>
+      <div class="login">
+        <p>Already have an account? Login</p>
+      </div>
     </main>
   </body>
 </html>
