@@ -43,15 +43,16 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 100%;
   gap: 20px;
 }
 
 .content .info {
-  margin: 30px 20px 10px 20px;
+  margin: 30px 30px 10px 30px;
 }
 
 .bold {
-  font-size: max(15px, 1.4vw);
+  font-size: max(15px, 1.3vw);
   font-weight: bold;
 }
 
@@ -65,7 +66,7 @@ fieldset {
   background-color: #fff;
   padding: 2rem;
   box-shadow: 10px 5px 5px #d6d6d6;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 fieldset > p {
@@ -81,8 +82,38 @@ form .form-input {
 
 .form-input input {
   height: 25px;
-  border: 1px solid #d6d6d6;
+  padding: 5px;
+  border: 1px solid #e5e7eb;
   border-radius: 3px;
+}
+
+.form-input label {
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+form .form-btn {
+  border: none;
+  border-radius: 5px;
+  font-size: 15.2px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #596d48;
+  padding: 12px 0;
+  width: 180px;
+  display: block;
+  margin: 10px auto;
+}
+
+.login p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login p span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #596d48;
 }
 
 @media only screen and (min-width: 600px) {
@@ -101,12 +132,34 @@ form .form-input {
     width: 700px;
   }
 
-  .logo-div {
+  .content {
+    justify-content: center;
+  }
+
+  .content .info {
+    margin-top: 60px;
+    width: 65%;
+  }
+
+  header .logo-div {
     margin-top: 35%;
+  }
+
+  form .form-input input {
+    width: 200px;
   }
 
   form .form-row {
     display: flex;
     gap: 50px;
+  }
+
+  form .form-btn {
+    margin-left: 2rem;
+  }
+
+  .login p {
+    text-align: left;
+    margin-left: 2rem;
   }
 }
