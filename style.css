@@ -30,14 +30,14 @@ body {
   justify-content: flex-start;
 }
 
-.header {
-  background-image: url("./assets/header-img.jpg");
+.sidebar {
+  background-image: url("./assets/sidebar-img.jpg");
   background-size: cover;
   width: 100%;
   padding: 20px 0 5px 0;
 }
 
-.header .logo-div {
+.sidebar .logo-div {
   font-family: "Norse Bold";
   width: 100%;
   padding: 20px 0;
@@ -47,11 +47,11 @@ body {
   text-align: center;
 }
 
-header .logo-img {
+.sidebar .logo-img {
   height: 15vh;
 }
 
-header .src {
+.sidebar .src {
   color: #fff;
   text-align: center;
   font-size: 12px;
@@ -105,6 +105,16 @@ form .form-input {
   padding: 5px;
   border: 1px solid #e5e7eb;
   border-radius: 3px;
+  outline: none;
+}
+
+.form-input input:user-invalid {
+  border: 1px solid red;
+}
+
+.form-input input:focus {
+  border: 1px solid blue;
+  box-shadow: 2px 2px 4px #d6d6d6;
 }
 
 .form-input label {
@@ -141,19 +151,19 @@ form .form-btn {
     flex-direction: row;
   }
 
-  .header {
+  .sidebar {
     background-position-x: center;
     width: 700px;
     display: flex;
     flex-direction: column;
   }
 
-  .header,
+  .sidebar,
   .content {
     min-height: 100vh;
   }
 
-  header .logo-div {
+  .sidebar .logo-div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,7 +176,7 @@ form .form-btn {
     width: auto;
   }
 
-  .header .src {
+  .sidebar .src {
     margin-top: auto;
     margin-bottom: 10px;
   }

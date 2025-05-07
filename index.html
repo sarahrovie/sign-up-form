@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
+    <div class="sidebar">
       <div class="logo-div">
         <img src="./assets/odin-lined.png" alt="Odin logo" class="logo-img" />
         <h1>ODIN</h1>
@@ -15,12 +15,12 @@
       <div class="src">
         <p>
           Photo by
-          <a href="https://unsplash.com/@haliewestphoto">Halle West</a>
+          <a href="https://unsplash.com/@haliewestphoto">Halie West</a>
           on
           <a href="https://unsplash.com/">Unsplash</a>
         </p>
       </div>
-    </header>
+    </div>
     <main class="content">
       <div class="info">
         <p class="bold">
@@ -59,7 +59,7 @@
               </div>
               <div class="form-input">
                 <label for="number">PHONE NUMBER</label>
-                <input type="tel" id="number" name="number" />
+                <input type="tel" id="number" name="number" required />
               </div>
             </div>
             <div class="form-row">
@@ -76,7 +76,7 @@
               <div class="form-input">
                 <label for="confirm-pwd">CONFIRM PASSWORD</label>
                 <input
-                  type="text"
+                  type="password"
                   id="confirm-pwd"
                   name="confirm-password"
                   required
