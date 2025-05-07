@@ -38,6 +38,10 @@ body {
   text-align: center;
 }
 
+header .logo-img {
+  width: 20%;
+}
+
 .content {
   background-color: #f9fafb;
   display: flex;
